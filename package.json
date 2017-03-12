@@ -12,8 +12,12 @@
   "author": "Victor Grigoriu <vgrigoriu@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/yargs": "^6.6.0",
     "npm-run-all": "^4.0.2",
     "tslint": "^4.5.1",
     "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "yargs": "^7.0.2"
   }
 }

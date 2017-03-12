@@ -1,7 +1,18 @@
-/* tslint:disable:no-console */
+import * as yargs from "yargs";
 
-export function main() {
-    console.log("hello world");
+interface InitArgs {
+    dir: string;
 }
 
-main();
+yargs
+    .usage("$0 <cmd> [args]")
+    .command("init [dir]", "Initialises the directory of architecture decision records", {
+        dir: {
+            default: "doc/adr",
+        },
+    },
+        (argv: InitArgs) => {
+            console.log("Will start recording ADRs in", argv.dir);
+        })
+    .help()
+    .argv;
