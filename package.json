@@ -2,8 +2,18 @@
   "name": "adr-tools.js",
   "version": "1.0.0",
   "description": "ADR tools in node",
-  "main": "lib/src/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint \"src/**/*.ts\" \"test/**/*.ts\"",
+    "build": "npm-run-all compile lint"
+  },
+  "main": "lib/index.js",
   "repository": "https://github.com/vgrigoriu/adr-tools.js",
   "author": "Victor Grigoriu <vgrigoriu@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "npm-run-all": "^4.0.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
 }
