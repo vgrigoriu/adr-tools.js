@@ -1,0 +1,9 @@
+{
+  "name": "adr-tools.js",
+  "version": "1.0.0",
+  "description": "ADR tools in node",
+  "main": "lib/src/index.js",
+  "repository": "https://github.com/vgrigoriu/adr-tools.js",
+  "author": "Victor Grigoriu <vgrigoriu@gmail.com>",
+  "license": "MIT"
+}
